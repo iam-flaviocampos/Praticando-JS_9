@@ -1,5 +1,5 @@
 /*
-Construa uma função para um sistema de notas de uma instituição que possui a seguinte política de
+09) Construa uma função para um sistema de notas de uma instituição que possui a seguinte política de
 classificação: Todo aluno recebe uma nota de 0 a 100. Alunos com nota abaixo de 40 são reprovados. As notas
 possuem a seguinte regra de arredondamento: Se a diferença entre a nota e o próximo múltiplo de 5 for menor
 que 3, arredondar a nota para esse próximo múltiplo de 5. Se a nota for abaixo de 38, não é feito nenhum
@@ -18,8 +18,8 @@ let aluno4 = 67
 let aluno5 = 22
 
 function classificacao (nota){
-    const proximoMultiplo = Math.ceil(nota / 5) * 5
-    const diferenca = proximoMultiplo - nota
+    const proximoMultiplo = Math.ceil(nota / 5) * 5 //Próximo múltiplo de 5
+    const diferenca = proximoMultiplo - nota //Diferença entre a nota e o próximo múltiplo de 5
 
     if (nota < notaMedia){
         return "Reprovado"
